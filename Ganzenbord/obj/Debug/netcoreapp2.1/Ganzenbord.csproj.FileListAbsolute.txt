@@ -1,0 +1,11 @@
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\bin\Debug\netcoreapp2.1\Ganzenbord.deps.json
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\bin\Debug\netcoreapp2.1\Ganzenbord.runtimeconfig.json
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\bin\Debug\netcoreapp2.1\Ganzenbord.runtimeconfig.dev.json
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\bin\Debug\netcoreapp2.1\Ganzenbord.dll
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\bin\Debug\netcoreapp2.1\Ganzenbord.pdb
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\obj\Debug\netcoreapp2.1\Ganzenbord.csprojAssemblyReference.cache
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\obj\Debug\netcoreapp2.1\Ganzenbord.csproj.CoreCompileInputs.cache
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\obj\Debug\netcoreapp2.1\Ganzenbord.AssemblyInfoInputs.cache
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\obj\Debug\netcoreapp2.1\Ganzenbord.AssemblyInfo.cs
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\obj\Debug\netcoreapp2.1\Ganzenbord.dll
+C:\Users\m-add\source\repos\Ganzenbord\Ganzenbord\obj\Debug\netcoreapp2.1\Ganzenbord.pdb

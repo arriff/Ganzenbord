@@ -10,7 +10,6 @@ namespace Ganzenbord
 
         public void spelregels(Speler spelers)
         {
-
             switch (spelers.positie)
             {
                 case 23:                                                            //bij positie 23

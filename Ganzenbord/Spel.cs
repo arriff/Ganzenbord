@@ -20,25 +20,31 @@ namespace Ganzenbord
             Console.WriteLine("Naam speler 3: ");
             spelerToevoegen(Console.ReadLine());
             Console.WriteLine("Het spel is gestart");
+            
         }
 
         public void spelen()
         {
             while (Spelbord.gameStatus)
             {
-                if (spelerActief.status)           // alleen als speler status true is doet ie nog mee, anders wordt zijn beurt overgeslagen omdat ie niet meer in het spel zit
+                if (spelerActief.Status && spelerActief.Beurten == 0 && spelerActief.Put == false)           // alleen als speler status true is doet ie nog mee, anders wordt zijn beurt overgeslagen omdat ie niet meer in het spel zit
                 {
-                    aanDeBeurt(spelerActief);
-                    spelerActief.spelerPositie();
-                    wachtOpSpelerInput();
-                    spelerActief.gooi();
-                    spelerActief.lopen();
-                    checkRegels();
-                    spelerActief.spelerPositie();
-                    wisselBeurt();
+                        aanDeBeurt(spelerActief);
+                        spelerActief.spelerPositie();
+                        wachtOpSpelerInput();
+                        spelerActief.gooi();
+                        spelerActief.lopen();
+                        checkRegels();
+                        spelerActief.spelerPositie();
+                        wisselBeurt();  
                 }
                 else
                 {
+                    if (spelerActief.Beurten != 0)
+                    {
+                        Console.WriteLine("je moet nog beurt overslaan");
+                        spelerActief.Beurten--;
+                    }
                     wisselBeurt();
                 }
             }
@@ -46,9 +52,8 @@ namespace Ganzenbord
 
         public void aanDeBeurt(Speler spelerActief)
         {
-            Console.WriteLine("                            =========================================================================");
-            Console.WriteLine("                            || " + spelerActief.naam + " is aan de beurt           ");
-
+                Console.WriteLine("                            =========================================================================");
+                Console.WriteLine("                            || " + spelerActief.Naam + " is aan de beurt           ");
         }
         public void wisselBeurt()
         {
@@ -80,7 +85,7 @@ namespace Ganzenbord
 
         public void checkRegels()
         {
-            bord.spelregels(spelerActief);
+            bord.spelregels(spelers, spelerActief);
         }
 
         public void spelerToevoegen(string invoerNaam)

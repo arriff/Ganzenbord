@@ -6,18 +6,29 @@ namespace Ganzenbord
 {
     public class Speler
     {
-        public string naam;
-        public int positie;
-        public int dobbelnr;
-        public bool status;
+        private string naam;
+        private int positie;
+        private int dobbelnr;
+        private bool status;
+        private int beurten;            //aantal beurten overslaan
+        private bool put;
 
-        public Speler(string Naam)
+        public Speler(string aNaam)
         {
-            naam = Naam;
-            positie = 0;
+            naam = aNaam;
+            positie = 29;
             dobbelnr = 0;
             status = true;
+            beurten = 0;
+            put = false;    
         }
+
+        public string Naam { get { return naam; } set { } }
+        public int Positie { get { return positie; } set { positie = value; } }
+        public int Dobbelnr{ get { return dobbelnr; } set { dobbelnr = value; } }
+        public bool Status { get { return status; } set { status = value; } }
+        public int Beurten { get { return beurten; } set { beurten = value; } }
+        public bool Put { get { return put; } set { put = value; } }
 
         public void lopen()
         {

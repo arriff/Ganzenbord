@@ -9,7 +9,8 @@ namespace Ganzenbord
         public static int dobbelen()
         {
             Random rnd = new Random();
-            int dobbelnummer = rnd.Next(1, 7);
+            //int dobbelnummer = rnd.Next(1, 7);
+            int dobbelnummer = 1;
             return dobbelnummer;
         }
     }
